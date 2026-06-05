@@ -1,0 +1,2 @@
+Rewrite the file
+A line is added
