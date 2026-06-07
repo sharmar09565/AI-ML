@@ -18,7 +18,7 @@
 #2 Writing a file('w')
 
 # f = open("eg.txt", "w")
-# f.write("Rewrite the file")     #overwrite the file 
+# f.write("Rewrite the file")     #overwrite(truncate) the file 
 
 
 #3 Appending at end('a')
@@ -44,4 +44,32 @@
 #      w+ :- it rewrites the file
 #      a+ :- pointer is present at end so its write/add the text from end
 
-f.close()
+# f = open("eg.txt", "r+")
+# f.write("123")
+# print(f.read())
+
+# f = open("eg.txt", "w+")
+# f.write("123")
+# print(f.read())
+
+# f = open("eg.txt", "a+")
+# f.write("123")
+# print(f.read())
+
+# f.close()
+
+
+
+# with Keyword :- 
+# it automatically close the file after operation. We don't have to close the file explicitly(i.e no need of f.close() after every operation)
+
+# with open("eg.txt", "r") as f:
+#     data = f.read()
+#     print(len(data))
+
+
+#  Delete files
+
+import os
+
+os.remove("eg2.txt") 
