@@ -17,3 +17,6 @@ class BankAccount:
 
 p1 = BankAccount(123, "Rahul", 12_000)
 
+print(p1.deposit(5000))
+print(p1.withdraw(7000))
+print(p1.check_balance())
